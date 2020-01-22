@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+        <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style> body {padding: 2; margin: 2;} </style>
+
+
+    </head>
+
+    <div id="myNav" class="overlay" onmouseout="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                    <a href="index.html" style="background-color: #E6AB9E">Home</a>
+                    <a href="#" style="background-color: #E6C09E">Visualization</a>
+                    <a href="form.html" style="background-color: #F0F2A7">Form</a>
+                    <a href="process.html" style="background-color: #A7F2C1">Process</a>
+                    <a href="#" style="background-color: #9EE6E6">About</a>
+                    <a href="#" style="background-color: #9AAEFC">Proposal</a>
+            </div>
+    </div>
+    
+    <body style="height: 90vw;">
+        <header>
+            <div class="navbar" id="myNav" onmouseover="openNav()" >
+                <a href="index.html" style="background-color: #E6AB9E">Home</a>
+                <a href="#" style="background-color: #E6C09E">Visualization</a>
+                <a href="form.html" style="background-color: #F0F2A7">Form</a>
+                <a href="process.html" style="background-color: #A7F2C1">Process</a>
+                <a href="#" style="background-color: #9EE6E6">About</a>
+                <a href="#" style="background-color: #9AAEFC">Proposal</a>
+            </div>
+            <div class="typewriter">
+                    <h2 style="color: #E6C09E;">Visualization</h2>
+            </div>
+        
+            <div class="navbar">
+                    <a style="width: calc(100%/5); background-color: #E6C09E;" onclick="openByPerson()" id="By Person">By Person</a>
+                    <a style="width: calc(100%/5);" onclick="openByConnection()" id="By Connection">By Connection</a>
+                    <a style="width: calc(100%/5);" onclick="openByPersonality()"  id="By Personality">By Personality</a>
+                    <a style="width: calc(100%/5);" onclick="openByGender()" id="By Gender">By Gender</a>
+                    <a style="width: calc(100%/5);" onclick="openBySexuality()" id="By Sexuality">By Sexuality</a>
+            </div>
+        </header>
+        
+
+        
+
+    
+    <!-- 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> 
+    --> 
+    <div class = "visualization">
+        <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: inline-block;" id = "byPerson">
+            <div class="card" id = "OJ">
+                <div class ="boxLeft">
+                    <h1 id = "person1name"></h1> 
+                    <p id = "person1C"></p> 
+                    <p id = "person1E"></p> 
+                    <p id = "person1A"></p> 
+                    <p id = "person1G"></p> 
+                    <p id = "person1S"></p> 
+                    <p id = "person1P"></p> 
+                </div>
+                <div class ="boxRight">
+                    <p id="story1"></p>
+                </div>
+            </div>
+            <div class="card" id = "Shanshan">
+                    <div class ="boxLeft">
+                        <h1 id = "person2name"></h1> 
+                        <p id = "person2C"></p> 
+                        <p id = "person2E"></p> 
+                        <p id = "person2A"></p> 
+                        <p id = "person2G"></p> 
+                        <p id = "person2S"></p> 
+                        <p id = "person2P"></p> 
+                    </div>
+                    <div class ="boxRight">
+                        <p id="story2" ></p>
+                    </div>
+            </div>
+            <div class="card" id = "DaHee">
+                        <div class ="boxLeft">
+                            <h1 id = "person3name"></h1> 
+                            <p id = "person3C"></p> 
+                            <p id = "person3E"></p> 
+                            <p id = "person3A"></p> 
+                            <p id = "person3G"></p> 
+                            <p id = "person3S"></p> 
+                            <p id = "person3P"></p> 
+                        </div>
+                        <div class ="boxRight">
+                            <p id="story3" ></p>
+                        </div>
+            </div>
+            <div class="card" id = "Rian">
+                            <div class ="boxLeft">
+                                <h1 id = "person4name"></h1> 
+                                <p id = "person4C"></p> 
+                                <p id = "person4E"></p> 
+                                <p id = "person4A"></p> 
+                                <p id = "person4G"></p> 
+                                <p id = "person4S"></p> 
+                                <p id = "person4P"></p> 
+                            </div>
+                            <div class ="boxRight">
+                                <p id="story4" ></p>
+                            </div>
+            </div>
+            <div class="card" id = "Kira">
+                            <div class ="boxLeft">
+                                <h1 id = "person5name"></h1> 
+                                <p id = "person5C"></p> 
+                                <p id = "person5E"></p> 
+                                <p id = "person5A"></p> 
+                                <p id = "person5G"></p> 
+                                <p id = "person5S"></p> 
+                                <p id = "person5P"></p> 
+                            </div>
+                            <div class ="boxRight">
+                                <p id="story5" ></p>
+                            </div>
+            </div>
+            <div class="card" id = "Macoto">
+                    <div class ="boxLeft">
+                        <h1 id = "person6name"></h1> 
+                        <p id = "person6C"></p> 
+                        <p id = "person6E"></p> 
+                        <p id = "person6A"></p> 
+                        <p id = "person6G"></p> 
+                        <p id = "person6S"></p> 
+                        <p id = "person6P"></p> 
+                    </div>
+                    <div class ="boxRight">
+                        <p id="story6" ></p>
+                    </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class ="visualization">
+        <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "byPersonality">
+            
+            <div class="flip-card" id = "person1">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="text">
+                            <h1>Openness</h1> 
+                        </div>
+                    </div>
+                    <div class="flip-card-back" >
+                            <h1>OJ</h1>
+                            <h1>DaHee</h1>
+                            <h1>Macoto</h1>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="flip-card" id = "person2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="text">
+                                <h1>Conscientiousness</h1> 
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                                <h1>No one yet...</h1>
+                
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="flip-card" id = "person3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="text">
+                                <h1>Extraversion</h1> 
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                                <h1>No one yet...</h1>
+            
+                        </div>
+                    </div>
+            </div>
+
+            
+            <div class="flip-card" id = "person4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="text">
+                                <h1>Agreeableness</h1>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                                <h1>Rian</h1>
+                                <h1>Kira</h1>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="flip-card" id = "person5">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="text">
+                                <h1>Neuroticism</h1> 
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                                <h1>No one yet...</h1>
+                        </div>
+                    </div>
+            </div>
+
+        </fieldset>
+    </div>
+
+        <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "byConnection">
+            
+                <h2 style="color: #E6C09E;">Comming Soon</h2>
+            
+        </fieldset>
+
+        <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "byGender">
+            
+                <h2 style="color: #E6C09E;">Comming Soon</h2>
+            
+        </fieldset>
+
+        <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "bySexuality">
+            
+                <h2 style="color: #E6C09E;">Comming Soon</h2>
+            
+        </fieldset>
+    </body>
+    <script src="script.js"></script>
+    <script src="visualization.js"></script>
+</html>

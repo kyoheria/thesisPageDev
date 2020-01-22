@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+    <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style> body {padding: 2; margin: 2;} </style>
+  </head>
+  <div id="myNav" class="overlay" onmouseout="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+                <a href="index.html" style="background-color: #E6AB9E">Home</a>
+                <a href="Visualization.html" style="background-color: #E6C09E">Visualization</a>
+                <a href="form.html" style="background-color: #F0F2A7">Form</a>
+                <a href="process.html" style="background-color: #A7F2C1">Process</a>
+                <a href="#" style="background-color: #9EE6E6">About</a>
+                <a href="#" style="background-color: #9AAEFC">Proposal</a>
+        </div>
+    </div>
+  <body style="height: 90vw;">
+    <header>
+        <div class="navbar" id="myNav" onmouseover="openNav()" >
+            <a href="index.html" style="background-color: #E6AB9E">Home</a>
+            <a href="Visualization.html" style="background-color: #E6C09E">Visualization</a>
+            <a href="form.html" style="background-color: #F0F2A7">Form</a>
+            <a href="process.html" style="background-color: #A7F2C1">Process</a>
+            <a href="#" style="background-color: #9EE6E6">About</a>
+            <a href="#" style="background-color: #9AAEFC">Proposal</a>
+        </div>
+    </header>
+    <form>
+        <fieldset id = "first">
+            <div class="question">
+                <h1>Name</h1>
+                <input id = "firstName" type="text" placeholder="First name">
+                <input id = "lastName" type="text" placeholder="Last name">
+                <input id = "nickName" type="text" placeholder="Nick name">
+            </div>
+            <input id="next_btn1" onclick="next_step1()" type="button" value="Next">
+        </fieldset>
+
+        </fieldset>
+            <fieldset id = "second">
+                <h1>Genaral Info</h1>
+                <input type="text" placeholder="Nationality">
+                <input type="text" placeholder="Ethinicity">
+                <input type="text" placeholder="Age">
+                <input type="text" placeholder="Career">
+            </div class = "submit">
+                <input id="next_btn2" onclick="next_step2()" type="button" value="Next">
+                <!-- <button type="button" id="B">next</button> -->
+            </div>
+        </fieldset>
+
+        <fieldset id = "third">
+            <div class = "slidecontainer">
+                <h1>How do you identify as?</h1>
+                <div class="M">
+                <p>Male.</p>
+                <input type="range" min="1" max="100" value ="0" oninput="Mdemo.value=value" class="slider" id="male">
+                <h3>Value: <output id="Mdemo">0</output></h3>
+            </div>
+            <div class="F">
+                <p>Female.</p>
+                <input type="range" min="1" max="100" value ="0" oninput="Fdemo.value=value" class="slider" id="female">
+                <h3>Value: <output id="Fdemo">0</output></h3>
+            </div>
+            <div class="G">
+                    <p>Gender fluid.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Gdemo.value=value" class="slider" id="genderFluid">
+                    <h3>Value: <output id="Gdemo">0</output></h3>
+            </div>
+            <div class="A">
+                    <p>Agender.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="agender">
+                    <h3>Value: <output id="Ademo">0</output></h3>
+            </div>
+            <div class="N">
+                    <p>Non-binary.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="non-binary">
+                    <h3>Value: <output id="Ndemo">0</output></h3>
+            </div>
+            <div class="Q">
+                    <p>GenderQueer.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="genderqueer">
+                    <h3>Value: <output id="Qdemo">0</output></h3>
+            </div>
+            <div class="T">
+                    <p>Transe.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="transe">
+                    <h3>Value: <output id="Tdemo">0</output></h3>
+            </div>
+            </div class = "submit">
+                <input id="next_btn3" onclick="next_step3()" type="button" value="Next">
+                <!-- <button type="button" id="B">next</button> -->
+            </div>
+        </fieldset>
+        <fieldset id = "forth">
+                <div class = "slidecontainer">
+                    <h1>How do you descride your identity?</h1>
+                    <div class="St">
+                    <p>Straight.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Mdemo.value=value" class="slider" id="straight">
+                    <h3>Value: <output id="straightDemo">0</output></h3>
+                </div>
+                <div class="Ga">
+                    <p>Gay.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Fdemo.value=value" class="slider" id="gay">
+                    <h3>Value: <output id="gayDemo">0</output></h3>
+                </div>
+                <div class="Le">
+                    <p>Lesbian.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Gdemo.value=value" class="slider" id="lesbian">
+                    <h3>Value: <output id="lesbianDemo">0</output></h3>
+                </div>
+                <div class="Bi">
+                    <p>Bisexual.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="bisexual">
+                    <h3>Value: <output id="BisexualDemo">0</output></h3>
+                </div>
+                <div class="Pa">
+                    <p>PanSexual.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="pansexual">
+                    <h3>Value: <output id="pansexualDemo">0</output></h3>
+                </div>
+                <div class="As">
+                    <p>Asexual.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="asexual">
+                    <h3>Value: <output id="asexualDemo">0</output></h3>
+                </div>
+                <div class="Qu">
+                    <p>Questioning.</p>
+                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="questioning">
+                    <h3>Value: <output id="questioningDemo">0</output></h3>
+                </div>
+                </div class = "submit">
+                    <input id="next_btn4" onclick="next_step4()" type="button" value="Next">
+                    <!-- <button type="button" id="B">next</button> -->
+                </div>
+            </fieldset>
+            <fieldset id="fifth">
+                <h1>Choose topics and answer</h1>
+                <select id="question1" name="question1" >
+                    <option value="Q1" >What was your families reaction when you came out?</option>
+                    <option value="Q2">When and how did you realize your sexuality? </option>
+                    <option value="Q3">What was the funniest coming out moment in your life? </option>
+                    <option value="Q4">Things I look back to my childhood and it makes so much sense now knowing I am not straight.</option>
+                    <option value="Q5">A weird question I often get asked and how I respond to it  </option>
+                    <option value="Q6">What is your coping method being sexual minority? </option>
+                </select>
+                <textarea type="text" placeholder="Write here" style="height: 15vh;"></textarea>
+                <select id="question1" name="question1" >
+                        <option value="Q1" >What was your families reaction when you came out?</option>
+                        <option value="Q2">When and how did you realize your sexuality? </option>
+                        <option value="Q3">What was the funniest coming out moment in your life? </option>
+                        <option value="Q4">Things I look back to my childhood and it makes so much sense now knowing I am not straight.</option>
+                        <option value="Q5">A weird question I often get asked and how I respond to it  </option>
+                        <option value="Q6">What is your coping method being sexual minority? </option>
+                    </select>
+                <textarea type="text" placeholder="Write here" style="height: 15vh;"></textarea>
+                </div class = "submit">
+                    <input id="next_btn5" onclick="next_step5()" type="button" value="Next">
+                    <!-- <button type="button" id="B">next</button> -->
+                </div>
+            </fieldset>
+            <fieldset id="six">
+                    <h1>Thank you!</h1>
+                    </div class = "submit">
+                    <a href="index.html"> <input id="next_btn5"  type="button" value="done"></a>
+                    </div>
+            </fieldset>
+    </form>
+    
+            <script src="script.js"></script>
+            <script src="form.js"></script>
+     </body>
+</html>
