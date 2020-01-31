@@ -32,6 +32,15 @@ function next_step3() {
   document.getElementById("third").style.display = "none";
   document.getElementById("forth").style.display = "block";
 }
+Button_3=document.getElementById('next_btn3')
+Button_3.addEventListener('click', function(evt){
+  
+})
+
+function next_step4() {
+  document.getElementById("forth").style.display = "none";
+  document.getElementById("fifth").style.display = "block";
+}
 M = 0;
 F = 0;
 // var Fslider = document.getElementById("female ");
@@ -53,7 +62,7 @@ Tval = document.getElementById('transe')
 Tval2 = document.getElementById('Tdemo')
 
 //B=document.getElementById('B')
-Button_3=document.getElementById('next_btn3')
+Button_3=document.getElementById('next_btn4')
 Button_3.addEventListener('click', function(evt){
   Mval2 = document.getElementById('Mdemo').innerHTML
   console.log('M :'+Mval2)
@@ -71,9 +80,9 @@ Button_3.addEventListener('click', function(evt){
   console.log('T :'+Tval2)
 })
 
-function next_step4() {
-  document.getElementById("forth").style.display = "none";
-  document.getElementById("fifth").style.display = "block";
+function next_step5() {
+  document.getElementById("fifth").style.display = "none";
+  document.getElementById("six").style.display = "block";
 }
 
 // var Fslider = document.getElementById("female ");
@@ -95,7 +104,7 @@ QuVal = document.getElementById('questioning')
 QuVal2 = document.getElementById('questioningDemo')
 
 //B=document.getElementById('B')
-Button_4=document.getElementById('next_btn4')
+Button_4=document.getElementById('next_btn5')
 Button_4.addEventListener('click', function(evt){
   StVal2 = document.getElementById('straightDemo').innerHTML
   console.log('St :'+StVal2)
@@ -113,11 +122,11 @@ Button_4.addEventListener('click', function(evt){
   console.log('T :'+Tval2)
 })
 
-function next_step5() {
-  document.getElementById("fifth").style.display = "none";
-  document.getElementById("six").style.display = "block";
+function next_step6() {
+  document.getElementById("six").style.display = "none";
+  document.getElementById("seven").style.display = "block";
 }
-Button_5=document.getElementById('next_btn5')
+Button_5=document.getElementById('next_btn6')
 Button_5.addEventListener('click', function(evt){
   /*
   var fs = require("fs");
@@ -146,8 +155,8 @@ Button_5.addEventListener('click', function(evt){
   */
 })
 
-function next_step6() {
-  document.getElementById("six").style.display = "none";
+function next_step7() {
+  document.getElementById("seven").style.display = "none";
 }
 
 function openNav() {
