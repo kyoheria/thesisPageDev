@@ -134,7 +134,7 @@ fieldset{
 #first{
   display: block;
 }
-#second, #third, #forth, #fifth, #six{
+#second, #third, #forth, #fifth, #six, #seven{
   display: none;
 }
 
