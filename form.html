@@ -14,7 +14,7 @@
                 <a href="form.html" style="background-color: #F0F2A7">Form</a>
                 <a href="process.html" style="background-color: #A7F2C1">Process</a>
                 <a href="#" style="background-color: #9EE6E6">About</a>
-                <a href="#" style="background-color: #9AAEFC">Proposal</a>
+                <a href="#" style="background-color: #9AAEFC">How this works</a>
         </div>
     </div>
   <body style="height: 90vw;">
@@ -25,166 +25,12 @@
             <a href="form.html" style="background-color: #F0F2A7">Form</a>
             <a href="process.html" style="background-color: #A7F2C1">Process</a>
             <a href="#" style="background-color: #9EE6E6">About</a>
-            <a href="#" style="background-color: #9AAEFC">Proposal</a>
+            <a href="#" style="background-color: #9AAEFC">How this works</a>
         </div>
     </header>
-    <form>
-        <fieldset id = "first">
-            <div class="question">
-                <h1>Name</h1>
-                <input id = "firstName" type="text" placeholder="First name">
-                <input id = "lastName" type="text" placeholder="Last name">
-                <input id = "nickName" type="text" placeholder="Nick name">
-            </div>
-            <input id="next_btn1" onclick="next_step1()" type="button" value="Next">
-        </fieldset>
-
-        </fieldset>
-            <fieldset id = "second">
-                <h1>Genaral Info</h1>
-                <input type="text" placeholder="Nationality">
-                <input type="text" placeholder="Ethinicity">
-                <input type="text" placeholder="Age">
-                <input type="text" placeholder="Career">
-            </div class = "submit">
-                <input id="next_btn2" onclick="next_step2()" type="button" value="Next">
-                <!-- <button type="button" id="B">next</button> -->
-            </div>
-        </fieldset>
-    <fieldset id = "third">
-        <h1>discribe yourself</h1>
-        <textarea type="text" placeholder="Write here" style="height: 15vh;"></textarea>
-        </div class = "submit">
-            <input id="next_btn3" onclick="next_step3()" type="button" value="Next">
-            <!-- <button type="button" id="B">next</button> -->
-        </div>
-    </fieldset>
-
-        <fieldset id = "forth">
-            <div class = "slidecontainer">
-                <h1>How do you identify as?</h1>
-                <div class="M">
-                <p>Male.</p>
-                <input type="range" min="1" max="100" value ="0" oninput="Mdemo.value=value" class="slider" id="male">
-                <h3>Value: <output id="Mdemo">0</output></h3>
-            </div>
-            <div class="F">
-                <p>Female.</p>
-                <input type="range" min="1" max="100" value ="0" oninput="Fdemo.value=value" class="slider" id="female">
-                <h3>Value: <output id="Fdemo">0</output></h3>
-            </div>
-            <div class="G">
-                    <p>Gender fluid.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Gdemo.value=value" class="slider" id="genderFluid">
-                    <h3>Value: <output id="Gdemo">0</output></h3>
-            </div>
-            <div class="A">
-                    <p>Agender.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="agender">
-                    <h3>Value: <output id="Ademo">0</output></h3>
-            </div>
-            <div class="N">
-                    <p>Non-binary.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="non-binary">
-                    <h3>Value: <output id="Ndemo">0</output></h3>
-            </div>
-            <div class="Q">
-                    <p>GenderQueer.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="genderqueer">
-                    <h3>Value: <output id="Qdemo">0</output></h3>
-            </div>
-            <div class="T">
-                    <p>Transe.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="transe">
-                    <h3>Value: <output id="Tdemo">0</output></h3>
-            </div>
-            </div class = "submit">
-                <input id="next_btn4" onclick="next_step4()" type="button" value="Next">
-                <!-- <button type="button" id="B">next</button> -->
-            </div>
-        </fieldset>
-        <fieldset id = "fifth">
-                <div class = "slidecontainer">
-                    <h1>How do you descride your identity?</h1>
-                    <div class="St">
-                    <p>Straight.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Mdemo.value=value" class="slider" id="straight">
-                    <h3>Value: <output id="straightDemo">0</output></h3>
-                </div>
-                <div class="Ga">
-                    <p>Gay.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Fdemo.value=value" class="slider" id="gay">
-                    <h3>Value: <output id="gayDemo">0</output></h3>
-                </div>
-                <div class="Le">
-                    <p>Lesbian.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Gdemo.value=value" class="slider" id="lesbian">
-                    <h3>Value: <output id="lesbianDemo">0</output></h3>
-                </div>
-                <div class="Bi">
-                    <p>Bisexual.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="bisexual">
-                    <h3>Value: <output id="BisexualDemo">0</output></h3>
-                </div>
-                <div class="Pa">
-                    <p>PanSexual.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="pansexual">
-                    <h3>Value: <output id="pansexualDemo">0</output></h3>
-                </div>
-                <div class="As">
-                    <p>Asexual.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="asexual">
-                    <h3>Value: <output id="asexualDemo">0</output></h3>
-                </div>
-                <div class="Qu">
-                    <p>Questioning.</p>
-                    <input type="range" min="1" max="100" value ="0" oninput="Ademo.value=value" class="slider" id="questioning">
-                    <h3>Value: <output id="questioningDemo">0</output></h3>
-                </div>
-                </div class = "submit">
-                    <input id="next_btn5" onclick="next_step5()" type="button" value="Next">
-                    <!-- <button type="button" id="B">next</button> -->
-                </div>
-            </fieldset>
-            <fieldset id="six">
-                <h1>Choose topics and answer</h1>
-                <select id="question1" name="question1" >
-                    <option value="Q1" >What was your families reaction when you came out?</option>
-                    <option value="Q2">When and how did you realize your sexuality? </option>
-                    <option value="Q3">What was the funniest coming out moment in your life? </option>
-                    <option value="Q4">Things I look back to my childhood and it makes so much sense now knowing I am not straight.</option>
-                    <option value="Q5">A weird question I often get asked and how I respond to it  </option>
-                    <option value="Q6">What is your coping method being sexual minority? </option>
-                    <option value="q7">time when my sexuality/gender identity was challenged</option>
-                    <option value="q8">stereotypes I get because of my gender identity</option>
-                    <option value="q9">time I questioned myself's gender/sexuality</option>
-                </select>
-                <textarea type="text" placeholder="Write here" style="height: 15vh;"></textarea>
-                <select id="question1" name="question1" >
-                        <option value="Q1" >What was your families reaction when you came out?</option>
-                        <option value="Q2">When and how did you realize your sexuality? </option>
-                        <option value="Q3">What was the funniest coming out moment in your life? </option>
-                        <option value="Q4">Things I look back to my childhood and it makes so much sense now knowing I am not straight.</option>
-                        <option value="Q5">A weird question I often get asked and how I respond to it  </option>
-                        <option value="Q6">What is your coping method being sexual minority? </option>
-                        <option value="q7">time when my sexuality/gender identity was challenged</option>
-                        <option value="q8">stereotypes I get because of my gender identity</option>
-                        <option value="q9">time I questioned myself's gender/sexuality</option>
-                        </select>
-                <textarea type="text" placeholder="Write here" style="height: 15vh;"></textarea>
-                </div class = "submit">
-                    <input id="next_btn6" onclick="next_step6()" type="button" value="Next">
-                    <!-- <button type="button" id="B">next</button> -->
-                </div>
-            </fieldset>
-            <fieldset id="seven">
-                    <h1>Thank you!</h1>
-                    </div class = "submit">
-                    <a href="index.html"> <input id="next_btn5"  type="button" value="done"></a>
-                    </div>
-            </fieldset>
-    </form>
-    
+    <div class="center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKWW1_ijz_RmOVA-MLi7i-MeqXr1eg8trsLdQTvD6s33kIBw/viewform?embedded=true" width="700vw" height="2852" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
             <script src="script.js"></script>
             <script src="form.js"></script>
      </body>

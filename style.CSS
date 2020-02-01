@@ -446,3 +446,8 @@ fieldset{
   line-height: 0.8;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  
+}

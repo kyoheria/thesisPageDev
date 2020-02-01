@@ -1,12 +1,14 @@
+var firstName, lastName, nickName, nationality, ethnicity, age, carrer;
+
 function next_step1() {
   document.getElementById("first").style.display = "none";
   document.getElementById("second").style.display = "block";
 }
 Button_1=document.getElementById('next_btn1')
 Button_1.addEventListener('click', function(evt){
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var nickName = document.getElementById("nickName").value;
+  firstName = document.getElementById("firstName").value;
+  lastName = document.getElementById("lastName").value;
+  nickName = document.getElementById("nickName").value;
   console.log(firstName);
   console.log(lastName);
   console.log(nickName);
@@ -18,10 +20,10 @@ function next_step2() {
 }
 Button_2=document.getElementById('next_btn2')
 Button_2.addEventListener('click', function(evt){
-  var nationality = document.getElementById("Nationality").value;
-  var ethnicity = document.getElementById("Ethnicity").value;
-  var age = document.getElementById("Age").value;
-  var carrer = document.getElementById("Carrer").value;
+  nationality = document.getElementById("Nationality").value;
+  ethnicity = document.getElementById("Ethnicity").value;
+  age = document.getElementById("Age").value;
+  carrer = document.getElementById("Carrer").value;
   console.log(nationality);
   console.log(ethnicity);
   console.log(age);
