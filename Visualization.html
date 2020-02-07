@@ -36,11 +36,11 @@
             </div>
         
             <div class="navbar">
-                    <a style="width: calc(100%/5); background-color: #E6C09E;" onclick="openByPerson()" id="By Person">By Person</a>
-                    <a style="width: calc(100%/5);" onclick="openByConnection()" id="By Connection">By Connection</a>
-                    <a style="width: calc(100%/5);" onclick="openByPersonality()"  id="By Personality">By Personality</a>
-                    <a style="width: calc(100%/5);" onclick="openByGender()" id="By Gender">By Gender</a>
-                    <a style="width: calc(100%/5);" onclick="openBySexuality()" id="By Sexuality">By Sexuality</a>
+                    <a style="width: calc(100%/5); background-color: #E6C09E;" onclick="openByPerson()" id="By Person">People</a>
+                    <a style="width: calc(100%/5);" onclick="openByConnection()" id="By Connection">Connection</a>
+                    <a style="width: calc(100%/5);" onclick="openByPersonality()"  id="By Personality">Personality</a>
+                    <a style="width: calc(100%/5);" onclick="openByGender()" id="By Gender">Termnology</a>
+                    <a style="width: calc(100%/5);" onclick="openBySexuality()" id="By Sexuality">Sexuality</a>
             </div>
         </header>
         
@@ -225,15 +225,6 @@
         <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "byGender">
             
                 <h2 style="color: #E6C09E;">Comming Soon</h2>
-                <script>
-                    d3.cvs('FormResponses.csv', function(data) {
-                        for (var i = 0; i < data.length; i++) {
-                            for(var j= 0; j<data[i].length;j++){
-                                console.log(data[i].j);
-                            }
-                        }
-                    });
-                </script>
 
             
         </fieldset>

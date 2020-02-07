@@ -101,6 +101,8 @@ function openByGender() {
     document.getElementById("By Gender").style.backgroundColor = "#E6C09E";
     document.getElementById("bySexuality").style.display = "none";
     document.getElementById("By Sexuality").style.backgroundColor = "#2D334A";
+
+    terminology();
 }
 
 function openBySexuality() {
@@ -114,4 +116,14 @@ function openBySexuality() {
     document.getElementById("By Gender").style.backgroundColor = "#2D334A";
     document.getElementById("bySexuality").style.display = "block";
     document.getElementById("By Sexuality").style.backgroundColor = "#E6C09E";
+}
+
+function terminology(){
+    d3.cvs('FormResponses.csv', function(data) {
+        for (var i = 0; i < data.length; i++) {
+            for(var j= 0; j<data[i].length;j++){
+                console.log(data[i].j);
+            }
+        }
+    });
 }
