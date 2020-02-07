@@ -120,6 +120,6 @@ function openBySexuality() {
 
 function terminology(){
     d3.csv(csv).then(function(data) {
-        console.log(data[1].Name);
+        console.log(data[1]);
       });
 }
