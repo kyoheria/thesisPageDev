@@ -5,7 +5,7 @@
         <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="style.CSS">
         <style> body {padding: 2; margin: 2;} </style>
-
+        <script src="d3/d3.js"></script>   
 
     </head>
 
@@ -225,6 +225,16 @@
         <fieldset style="width: 90%; height: 100%; position:absolute; left: 5%; display: none;" id = "byGender">
             
                 <h2 style="color: #E6C09E;">Comming Soon</h2>
+                <script>
+                    d3.cvs('FormResponses.csv', function(data) {
+                        for (var i = 0; i < data.length; i++) {
+                            for(var j= 0; j<data[i].length;j++){
+                                console.log(data[i].j);
+                            }
+                        }
+                    });
+                </script>
+
             
         </fieldset>
 
