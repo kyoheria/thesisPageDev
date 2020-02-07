@@ -1,6 +1,6 @@
 var openess = [];
 var agreeableness = [];
-
+var csv = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpQmll0IN35vyqKtiB31pqcYN2d5a8JBtJi1qw4DnclPhxjefbq9J89rG6C_t1knCMYoo9qrPhcp3S/pub?output=csv';
 
 class Person{
 
@@ -119,11 +119,5 @@ function openBySexuality() {
 }
 
 function terminology(){
-    d3.cvs('FormResponses.csv', function(data) {
-        for (var i = 0; i < data.length; i++) {
-            for(var j= 0; j<data[i].length;j++){
-                console.log(data[i].j);
-            }
-        }
-    });
+    
 }
