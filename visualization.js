@@ -120,6 +120,8 @@ function openBySexuality() {
 
 function terminology(){
     d3.csv(csv).then(function(data) {
-        console.log(data[1].Male);
+        for(var i = 1; i<data.length; i++){
+            console.log(data[i].Male);
+        }
       });
 }
