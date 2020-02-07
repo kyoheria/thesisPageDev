@@ -32,7 +32,7 @@ class Person{
     people.push(new Person("Macoto","Japan", "Japanese", "25-29","Female", "Bisexual", "she, her", "Office worker", "23", "When I was 17 years old, I got into the Takarazuka Revue, and I started to feel like a cool woman.My first love for my love was a girl of the same age who became friends through SNS when I was 18 years old.Until then, even with a little favor from the boys, he could not have any more feelings.I met her only once, but she realized that she loved herself because of her cool appearance, gentle gestures, etc., but not for friends but for the general public.From that point on, he sometimes favored men, but he felt more comfortable with women than with men and wants to be more together.",MacotoOdj));
 
 for(var i = 1; i<=people.length; i++){
-    console.log(people[i-1]);
+    //console.log(people[i-1]);
     var p = people[i-1];
     document.getElementById("person"+i+"name").innerHTML = p.person[0];
     document.getElementById("person"+i+"C").innerHTML = p.person[1];
