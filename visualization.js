@@ -1,6 +1,6 @@
 var openess = [];
 var agreeableness = [];
-var csv = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSpQmll0IN35vyqKtiB31pqcYN2d5a8JBtJi1qw4DnclPhxjefbq9J89rG6C_t1knCMYoo9qrPhcp3S/pub?output=csv';
+var csv = "FormResponce.csv";
 
 class Person{
 
@@ -88,6 +88,8 @@ function openByConnection() {
     document.getElementById("By Gender").style.backgroundColor = "#2D334A";
     document.getElementById("bySexuality").style.display = "none";
     document.getElementById("By Sexuality").style.backgroundColor = "#2D334A";
+
+    connection();
 }
 
 function openByGender() {
@@ -120,8 +122,28 @@ function openBySexuality() {
 
 function terminology(){
     d3.csv(csv).then(function(data) {
+        var dataset= {"children":[]};
+        var r = [];
         for(var i = 1; i<data.length; i++){
-            console.log(data[i].Male);
+            var str = data[i].Male.toString();
+            console.log(str);
+            for(var n = 0; n<str.length; n++){
+                if(str.charAt(n)=='\ '){
+                    console.log("spliting");
+                    r.push(str.split(","));
+                    r.push(str.split(" "));
+                }
+
+                //console.log(str.split(","));
+            }
+            //dataset.children.push(data[i].Male);
+            //console.log(data[i].Male);
         }
-      });
+        console.log("word is"+r);
+    });
+}
+
+function connection(){
+    
+
 }
