@@ -184,9 +184,10 @@ fieldset{
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  padding: 10vh;
-  font-size: 10vh;
-  height: 3vh;
+  padding-top: 0;
+  padding: 5vh;
+  font-size: 8vh;
+  height: 2vh;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #9191F2; /* The typwriter cursor */
