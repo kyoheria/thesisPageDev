@@ -66,12 +66,19 @@ h1{
   font-size: 3vw;
   line-height: 24px;
 }
+
+h4{
+  font-size: 2vw;
+  line-height: 24px;
+}
+
 h3{
   font-size: 0vw;
   color: #3C4463;
 }
 p {
   text-align: left;
+  line-height: 1.0;
 }
 
 input[type=text], select , textarea{
@@ -184,8 +191,9 @@ fieldset{
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  padding-top: 0;
-  padding: 5vh;
+  padding-top: 10px;
+  vertical-align: top;
+  padding: 8vh;
   font-size: 8vh;
   height: 2vh;
   text-align: center;
@@ -365,34 +373,24 @@ fieldset{
 
 
 .card {
-  float: left;
+  margin: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 100%;
-  height: 30%;
+  width: 90%;
+  
   font-size: 2vh;
-  color: #E6C09E;
+  color: #9EE6E6;
+  padding: 10px
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.boxRight {
-  left: 40%;
-  float: left;
-  padding: 2px 16px;
-  width: 70%;
-  line-height: 0.8;
-}
-.boxLeft {
-  float: left;
-  padding: 2px 16px;
-  width: 30%;
-}
+
 
 
 .text {
-  padding: 2px 16px;
+  padding: 20px 16px;
 }
 
 .flip-card {
@@ -451,4 +449,57 @@ fieldset{
   margin: auto;
   width: 50%;
   
+}
+
+
+div.sticky {
+  position: sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+
+.box {
+  padding: 10px 40px;
+  font-size: 2.5vh;
+  background-color: inherit;
+  width: 90%;
+  line-height: 15px;
+  color: #9AAEFC;
+  margin: auto;
+}
+
+
+.lefty {
+  left: 0;
+}
+.righty {
+  left: 20%;
+}
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
 }
