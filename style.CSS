@@ -316,6 +316,7 @@ fieldset{
   width: 50%;
   line-height: 15px;
   color: #9AAEFC;
+  font-size: 1.5vw;
 }
 .container::after {
   content: '';
