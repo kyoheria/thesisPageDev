@@ -1,6 +1,14 @@
 .tab {
   display: none;
 }
+
+.iconDetails {
+  margin-left:2%;
+  float:left; 
+  height:20%;
+  width:20%; 
+} 
+
 form{
   position: relative;
   display: inline-block;
